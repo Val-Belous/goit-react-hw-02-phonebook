@@ -53,10 +53,10 @@ export class App extends Component {
   render() {
     return (
       <>
-        <div>
-          <h1>Phonebook</h1>
+        <div className="container">
+          <h1 className="mainText">Phonebook</h1>
           <Form addUserData={this.addUserData} />
-          <h2>Contacts</h2>
+          <h2 className="mainText">Contacts</h2>
           <Filter handlerFilter={this.handlerFilter} />
           <ContactList
             contactList={this.getContactList()}

@@ -1,10 +1,14 @@
+import styles from './ContactListItem.module.css';
+
 export const ContactListItem = ({ id, name, number, onDelete }) => {
   return (
-    <li key={id}>
+    <li className={styles.listItem} key={id}>
       <p>
         {name}: {number}
       </p>
-      <button onClick={() => onDelete(id)}>Delete</button>
+      <button className={styles.btn} onClick={() => onDelete(id)}>
+        Delete
+      </button>
     </li>
   );
 };

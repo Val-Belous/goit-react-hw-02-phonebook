@@ -1,9 +1,16 @@
+import styles from '../Form/Form.module.css';
+
 export const Filter = ({ handlerFilter }) => {
   return (
-    <form>
-      <label>
+    <form className={styles.form}>
+      <label className={styles.label}>
         Find Contacts by name
-        <input type="text" name="name" onChange={handlerFilter} />
+        <input
+          className={styles.input}
+          type="text"
+          name="name"
+          onChange={handlerFilter}
+        />
       </label>
     </form>
   );

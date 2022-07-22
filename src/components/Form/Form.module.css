@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--main-color);
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input {
+  background-color: var(--third-color);
+  border: 1px solid var(--main-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 10px;
+  color: var(--main-color);
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--third-color);
+  line-height: 1.62;
+  border: transparent;
+  padding: 6px 22px;
+  width: 150px;
+  transition: box-shadow var(--animation), color var(--animation),
+    background-color var(--animation);
+  border-radius: 5px;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--second-color);
+  background-color: var(--main-color);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
+}
