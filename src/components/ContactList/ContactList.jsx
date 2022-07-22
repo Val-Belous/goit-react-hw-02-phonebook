@@ -19,10 +19,11 @@ export const ContactList = ({ contactList, onDelete }) => {
 };
 
 ContactList.propTypes = {
+  onDelete: PropTypes.func.isRequired,
   users: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
       number: PropTypes.number.isRequired,
     })
   ),

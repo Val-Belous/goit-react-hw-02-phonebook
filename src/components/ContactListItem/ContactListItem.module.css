@@ -8,6 +8,7 @@
 }
 
 .btn {
+  font-family: var(--font);
   cursor: pointer;
   background-color: var(--third-color);
   line-height: 1.62;

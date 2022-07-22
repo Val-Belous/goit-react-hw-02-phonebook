@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from '../Form/Form.module.css';
 
 export const Filter = ({ handlerFilter }) => {
@@ -14,4 +15,8 @@ export const Filter = ({ handlerFilter }) => {
       </label>
     </form>
   );
+};
+
+Filter.propTypes = {
+  handlerFilter: PropTypes.func.isRequired,
 };
