@@ -1,8 +1,12 @@
+import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
 import styles from './Form.module.css';
 
 export class Form extends Component {
+  static propTypes = {
+    addUserData: PropTypes.func.isRequired,
+  };
   state = {
     name: '',
     number: '',
